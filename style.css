@@ -55,8 +55,7 @@ body
 #yellow
 {
 	fill:#FBCC0A;
-	box-shadow: 0px 0px 20px #00000029;
-opacity: 1;
+	filter: drop-shadow(0px 0px 6px rgba(0,0,0,0.2));
 	animation: yellow 2s ease-in-out /*steps(100, start)*/ both infinite;
 }
 @keyframes yellow
@@ -82,6 +81,7 @@ opacity: 1;
 	background-color: #FE6732;
 	width: 15vw;
 	top: 50%;
+	opacity: 60%;
 }
 #line1{left: 210px;}
 #line2{right: 210px;}
@@ -132,12 +132,15 @@ opacity: 1;
 .gridLeft
 {
 	grid-area: GL;
-	padding-right: 30px;
+	/*padding-right: 30px;*/
+	max-width: 550px;
 }
 .gridRight
 {
 	grid-area: GR;
-	padding-left: 30px;
+	/*padding-left: 30px;*/
+	position: relative;
+	left: -30px;
 }
 .fullGrid
 {
@@ -159,7 +162,7 @@ opacity: 1;
 }
 .head1
 {
-	margin-top: 100px;
+	margin-top: 120px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	font-size: 40px;
