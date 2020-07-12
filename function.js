@@ -24,7 +24,7 @@ function scrollFunction()
 		{ tab[i].classList.remove('invert'); }
 	}
 
-	else if ((scroll >= about-200) && (scroll<howto+600)) 
+	else if ((scroll >= about-200) && (scroll<howto+700)) 
 	{
 		document.getElementById('ref-about').classList.add('tab_active');
 		for (i = 0; i < tab.length; i++)
