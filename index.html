@@ -8,11 +8,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">  
 <!-- ---fonts E--- -->
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="function.js"></script>
 </head>
 
 <body>
 
 	<img class="mainLogo" src="skins/logo.png">
+
+	<div id="nav">
+		<img id="ref-home" class="tab tab_active" src="skins/ref-home.svg"><br>
+		<img id="ref-about" class="tab" src="skins/ref-about.svg"><br>
+		<img id="ref-howto" class="tab" src="skins/ref-howto.svg">
+	</div>
 
 	<section id="home_sec">
 		<p class="mainTitle">ABAR JIGAY !</p>
@@ -100,5 +107,10 @@
 		
 	</section>
 
+
+
+<script>
+	window.onscroll = function() {scrollFunction()};
+</script>
 </body>
 </html>
