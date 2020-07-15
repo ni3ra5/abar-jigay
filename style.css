@@ -8,12 +8,14 @@
 	font-family: 'kg';
 	src: url(fonts/KGBlankSpaceSketch.ttf);
 }
+html{scroll-behavior: smooth;}
 body
 {
 	font-family: kg;
 	max-width: 100%;
 	overflow-x: hidden;
 }
+
 #home_sec
 {
 	position: relative;
@@ -86,12 +88,36 @@ body
 #line1{left: 210px;}
 #line2{right: 210px;}
 
-.social_cont
+#store_cont
 {
 	position: absolute;
 	left: 50%;
-	bottom: 8%;
+	bottom: 50px;
 	transform: translate(-50%);
+}
+.store
+{
+	display: inline-block;
+	width: 150px;
+	margin-right: 10px;
+	margin-top: 20px;
+	/*opacity: 60%;*/
+	filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.5));
+	transition: all ease-in-out 50ms;
+	/*border: 1px solid #FE6732;*/
+	border-radius: 10px;
+}
+.store:hover
+{
+	/*margin-top: 7px;*/
+	padding-bottom: 8px;
+	filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.5));
+}
+
+.social_cont
+{
+	margin-top: 20px;
+	/*border: 1px solid #FE6732;*/
 }
 #fb,#ig
 {
@@ -101,11 +127,11 @@ body
 {
 	height: 25px;
 }
-#icon_fb, #title_fb, #icon_ig, #title_ig
+#title_fb, #title_ig
 {
 	display: inline-block;
 	padding: 0px 5px;
-	color: white;
+	color: #FE6732;
 }
 #title_fb, #title_ig
 {
@@ -114,13 +140,11 @@ body
 }
 #fb:hover #title_fb
 {	
-	color: #FE6732;	
-	text-shadow: 0px 3px 3px rgba(0,0,0,0.5);
+	color: blue;
 }
 #ig:hover #title_ig
 {	
-	color: #FE6732;	
-	text-shadow: 0px 3px 3px rgba(0,0,0,0.5);
+	color: blue;
 }
 
 #about_sec
@@ -186,22 +210,7 @@ body
 	font-size: 25px;
 	color: #292F3D;
 }
-.store
-{
-	display: inline-block;
-	width: 150px;
-	margin-right: 10px;
-	margin-top: 20px;
-	/*opacity: 60%;*/
-	filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.5));
-	transition: all ease-in-out 50ms;
-}
-.store:hover
-{
-	margin-top: 7px;
-	padding-bottom: 8px;
-	filter: drop-shadow(0px 6px 6px rgba(0,0,0,0.3));
-}
+
 
 
 #howto_sec
@@ -242,9 +251,9 @@ body
 	color: white;
 	padding: 15px 0px;
 	font-family: 'Poppins', sans-serif;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 15px;
-	text-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+	/*text-shadow: 0px 0px 6px rgba(0,0,0,0.5);*/
 }
 .footerBG
 {
@@ -283,10 +292,13 @@ body
 {
 	position: fixed;
 	right: 0px;
-	z-index: 1;
 	text-align: right;
 	padding: 50px;
 	z-index: 10;
+}
+#nav2
+{
+	display: none;
 }
 .tab
 {
@@ -306,3 +318,166 @@ body
 }
 
 .tab:hover {opacity: 1}
+
+/*----------------------- screen sizes -----------------------*/
+
+@media (max-width: 1367px)
+{
+	.showcase
+	{
+		width: 32%;
+		top: 53%;
+	}
+	.gridRight
+	{
+		left: -90px;
+	}
+	.details
+	{
+		max-width: 440px;
+		font-size: 14px;
+	}
+	#app
+	{
+		float: none;
+		width: 75%;
+	}
+	.fullGrid
+	{
+		max-width: 1000px;
+	}
+
+}
+
+@media (max-width: 1290px)
+{
+	.fullGrid
+	{
+		max-width: 960px;
+	}
+}
+
+@media (max-width: 1200px)
+{
+	.mainTitle
+	{
+		padding: 65px 0px 0px 180px;
+	}
+	.showcase
+	{
+		width: 40%;
+	}
+	#line1, #line2
+	{
+		display: none;
+	}
+	#nav
+	{
+		position: absolute;
+	}
+	#nav2
+	{
+		display: block;
+		position: absolute;
+
+		position: absolute;
+		right: 0px;
+		text-align: right;
+		padding: 50px;
+		z-index: 10;
+
+		top: 50px;
+	}
+
+	.fullGrid
+	{
+		grid-template-areas: 'GL' 'GR';
+	}
+	.gridLeft
+	{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 650px;
+		text-align: center;
+	}
+	.gridRight
+	{
+		left: 0px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#app
+	{
+		position: relative;
+		left: -20px;
+	}
+	.info_cont
+	{
+		text-align: center;
+	}
+	.details
+	{
+		border-left: none;
+		padding-left: 0px;
+	}
+	.head1
+	{
+		margin-top: 60px;
+	}
+	.video
+	{
+		width: 75%;
+	}
+}
+
+@media (max-width: 1060px)
+{
+	#nav2
+	{
+		top: 200px;
+	}
+}
+
+@media (max-width: 850px)
+{
+	.mainTitle
+	{
+		padding: 65px 20px 0px 0px;
+
+		font-family: kg;
+		font-size: 45px;
+		color: white;
+		position: absolute;
+		text-shadow: 4px 4px 3px rgba(0,0,0,0.5);
+		right: 30px;
+	}
+	#nav
+	{
+		top: 120px;
+	}
+	.showcase
+	{
+		width: 70%;
+		top: 58%;
+	}
+	#store_cont
+	{
+		bottom: 100px;
+		width: 450px;
+		text-align: center;
+	}
+	.store
+	{
+		width: 200px;
+		margin-left: 10px;
+	}
+	#about_sec
+	{
+		padding-top: 200px;
+		padding-bottom: 80px;
+	}
+	#nav2
+	{
+		top: 0px;
+	}
+}

@@ -1,0 +1,4 @@
+#292F3D - Deep Blue
+#FCCC01 - Yellow
+#707070 - Gray
+#FE6732 - Orange

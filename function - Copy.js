@@ -9,7 +9,7 @@ function scrollFunction()
 	
 	// var pos_about = about.scrollTop;
 	
-	var tab = document.getElementsByClassName('catch');
+	var tab = document.getElementsByClassName('tab');
 
 	for (i = 0; i < tab.length; i++)
 	{ tab[i].classList.remove('tab_active'); }
