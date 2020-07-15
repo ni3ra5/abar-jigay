@@ -22,6 +22,7 @@ body
 	height: 100%;
 	z-index: 101;
 	background:#292F3D url(skins/loader.gif) no-repeat center;
+	background-size: 150px;
 	opacity: 1;
 	transition: all ease-in-out 100ms;
 }
