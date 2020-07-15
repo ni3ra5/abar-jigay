@@ -47,7 +47,7 @@ function small_logo()
 	var logo = document.getElementById("mainLogo");
 	var scroll = pageYOffset;
 
-	if (scroll > 100)
+	if (scroll > 10)
 	{
 		logo.classList.add('small_logo');
 	}
@@ -55,4 +55,11 @@ function small_logo()
 	{
 		logo.classList.remove('small_logo');
 	}
+}
+
+function loader()
+{
+	setTimeout(function(){document.getElementById('loader').style.opacity = '0';},500);
+
+	
 }
