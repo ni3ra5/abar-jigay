@@ -58,7 +58,7 @@ body
 {
 	fill:#FBCC0A;
 	filter: drop-shadow(0px 0px 6px rgba(0,0,0,0.2));
-	animation: yellow 2s ease-in-out /*steps(100, start)*/ both infinite;
+	animation: yellow 1.5s ease-in-out /*steps(100, start)*/ both infinite;
 }
 @keyframes yellow
 {
@@ -268,7 +268,7 @@ body
 .hoverEffect1
 {
 	color: red;
-	animation: hoverEffect_a 2s ease-in-out /*steps(100, start)*/ both infinite;
+	animation: hoverEffect_a 1.5s ease-in-out /*steps(100, start)*/ both infinite;
 }
 @keyframes hoverEffect_a
 {
@@ -279,7 +279,7 @@ body
 .hoverEffect2
 {
 	color: red;
-	animation: hoverEffect_b 2s ease-in-out /*steps(100, start)*/ both infinite;
+	animation: hoverEffect_b 1.5s ease-in-out /*steps(100, start)*/ both infinite;
 }
 @keyframes hoverEffect_b
 {
