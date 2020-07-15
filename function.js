@@ -61,7 +61,5 @@ function loader()
 {
 	var loader = document.getElementById('loader');
 	setTimeout(function () { loader.style.opacity = '0'; }, 500);
-	loader.style.display = 'none';
-
-	
+	setTimeout(function () { loader.style.display = 'none'; }, 800);
 }
