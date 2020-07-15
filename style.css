@@ -30,6 +30,7 @@ body
 	padding: 30px;
 	z-index: 1000;
 	filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.1));
+	transition: all ease-in-out 50ms;
 }
 .mainTitle
 {
@@ -146,6 +147,10 @@ body
 {	
 	color: blue;
 }
+#ig
+	{
+		margin-left: 50px;
+	}
 
 #about_sec
 {
@@ -440,36 +445,52 @@ body
 
 @media (max-width: 850px)
 {
+	.mainLogo
+	{
+		width: 60px;
+	}
 	.mainTitle
 	{
-		padding: 65px 20px 0px 0px;
+		padding: 44px 30px 0px 0px;
 
 		font-family: kg;
-		font-size: 45px;
+		font-size: 25px;
 		color: white;
 		position: absolute;
 		text-shadow: 4px 4px 3px rgba(0,0,0,0.5);
-		right: 30px;
+		right: 0px;
 	}
 	#nav
 	{
-		top: 120px;
+		top: 80px;
+		padding: 30px;
 	}
 	.showcase
 	{
 		width: 70%;
-		top: 58%;
+		top: 59%;
+	}
+	.tab
+	{
+		height: 20px;
+	}
+	.tab_active
+	{
+		height: 30px;
 	}
 	#store_cont
 	{
-		bottom: 100px;
+		bottom: 50px;
 		width: 450px;
 		text-align: center;
 	}
 	.store
 	{
-		width: 200px;
+		width: 120px;
 		margin-left: 10px;
+		margin-left: 5px;
+		margin-right: 5px;
+		border-radius: 0px;
 	}
 	#about_sec
 	{
@@ -479,5 +500,62 @@ body
 	#nav2
 	{
 		top: 0px;
+		padding: 30px;
+	}
+	#about_sec
+	{
+		padding-top: 140px;
+	}
+	.head1
+	{
+		font-size: 30px;
+		margin-top: 30px;
+	}
+	.details 
+	{
+	    margin-left: auto;
+	    margin-right: auto;
+	    max-width: 290px;
+		font-size: 13px;
+	}
+	.head2
+	{
+		font-size: 15px;
+		margin-top: 65px;
+	}
+	#ig
+	{
+		margin-left: 10px;
+	}
+	#icon_fb, #icon_ig
+	{
+		height: 20px;
+	}
+	#title_fb, #title_ig
+	{
+		font-size: 12px;
+	}
+	.line3
+	{
+		width: 130px;
+	}
+	.head3
+	{
+		font-size: 22px;
+		padding: 20px 0px;
+	}
+	.video
+	{
+		width: 90%;
+	}
+	.copyrights
+	{
+		padding: 5px 0px;
+		font-size: 10px;
+	}
+	.small_logo
+	{
+		width: 40px;
+		padding: 10px;
 	}
 }

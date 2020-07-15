@@ -41,3 +41,18 @@ function scrollFunction()
 
 	// alert(howto);
 }
+
+function small_logo()
+{
+	var logo = document.getElementById("mainLogo");
+	var scroll = pageYOffset;
+
+	if (scroll > 100)
+	{
+		logo.classList.add('small_logo');
+	}
+	else
+	{
+		logo.classList.remove('small_logo');
+	}
+}

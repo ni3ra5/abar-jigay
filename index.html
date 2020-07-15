@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="shortcut icon" href="skins/favicon.png" type="image/png"> 
+	<link rel="shortcut icon" href="skins/favicon2.png" type="image/png"> 
 	<title>Abar Jigay</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- ---fonts S--- -->
@@ -13,7 +13,7 @@
 
 <body>
 
-	<img class="mainLogo" src="skins/logo.png">
+	<img id="mainLogo" class="mainLogo" src="skins/logo.png">
 
 	<div id="nav">
 		<a href="#home_sec"><img id="ref-home" class="tab catch tab_active" src="skins/ref-home.svg"></a><br>
@@ -101,7 +101,7 @@
 						<p id="title_fb">Facebook</p>
 						</div></a>
 
-						<a href=""><div id="ig" style="margin-left: 50px;">
+						<a href=""><div id="ig">
 						<img id="icon_ig" src="skins/Icon_instagram.svg">
 						<p id="title_ig">Instagram</p>
 						</div></a>
@@ -127,7 +127,11 @@
 
 
 <script>
-	window.onscroll = function() {scrollFunction()};
+	window.onscroll = function() 
+	{
+		scrollFunction()
+		small_logo()
+	};
 </script>
 </body>
 </html>
