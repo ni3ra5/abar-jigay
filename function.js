@@ -59,7 +59,9 @@ function small_logo()
 
 function loader()
 {
-	setTimeout(function(){document.getElementById('loader').style.opacity = '0';},500);
+	var loader = document.getElementById('loader');
+	setTimeout(function () { loader.style.opacity = '0'; }, 500);
+	loader.style.display = 'none';
 
 	
 }
