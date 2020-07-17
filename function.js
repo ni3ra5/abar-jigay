@@ -7,24 +7,23 @@ function scrollFunction()
 	var about = document.getElementById('about_sec').scrollHeight;
 	var howto = document.getElementById('howto_sec').scrollHeight;
 	
-	// var pos_about = about.scrollTop;
-	
 	var tab = document.getElementsByClassName('catch');
+	const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+	// alert(vh);
 
 	for (i = 0; i < tab.length; i++)
 	{ tab[i].classList.remove('tab_active'); }
 	
-	// var scroll = document.documentElement.scrollTop;
 	var scroll = pageYOffset;
 
-	if (scroll < about-100)
+	if (scroll < vh-100)
 	{
 		document.getElementById('ref-home').classList.add('tab_active');
 		for (i = 0; i < tab.length; i++)
 		{ tab[i].classList.remove('invert'); }
 	}
 
-	else if ((scroll >= about-100) && (scroll<howto+700)) 
+	else if ((scroll >= vh-100) && (scroll< vh+600)) 
 	{
 		document.getElementById('ref-about').classList.add('tab_active');
 		for (i = 0; i < tab.length; i++)
